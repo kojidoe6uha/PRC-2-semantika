@@ -1,0 +1,160 @@
+/* Сброс отступов и базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: #faf8fc;
+    color: #2d2a3a;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #6C3CB0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #6C3CB0;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #6C3CB0;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    border-bottom-color: #6C3CB0;
+}
+
+/* Секции */
+section {
+    margin: 40px 0;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    color: #6C3CB0;
+    border-left: 5px solid #9B7BC0;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Карточки рецептов (article) */
+article {
+    background: #F4F0FA;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+article h3 {
+    color: #4A2A7A;
+    margin-bottom: 5px;
+}
+
+/* Список навыков */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 5px 0;
+}
+
+#skills ul li {
+    background: #E6DDF5;
+    padding: 6px 18px;
+    border-radius: 20px;
+    border: 1px solid #C4B0E0;
+    color: #4A2A7A;
+    font-weight: 500;
+}
+
+/* Форма – простая и плоская */
+form {
+    max-width: 450px;
+    background: #F4F0FA;
+    padding: 25px 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #3D2A5C;
+}
+
+form label:first-of-type {
+    margin-top: 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: white;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #6C3CB0;
+    outline: none;
+}
+
+form button {
+    margin-top: 18px;
+    padding: 10px 18px;
+    background: #6C3CB0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: #4A2A7A;
+}
+
+/* Подвал */
+footer {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 2px solid #ddd;
+    text-align: center;
+    color: #555;
+}
+
+footer #update-date {
+    font-weight: bold;
+    color: #6C3CB0;
+}

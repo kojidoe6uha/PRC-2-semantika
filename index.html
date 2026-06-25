@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои рецепты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍽 Мои рецепты</h1>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#recipes">Рецепты</a>
+            <a href="#skills">Навыки</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>
+                Я готовлю простые, сытные блюда для семьи и друзей. Делюсь любимыми рецептами, 
+                которые не требуют особых кулинарных навыков.
+            </p>
+        </section>
+
+        <section id="recipes">
+            <h2>Рецепты</h2>
+
+            <article>
+                <h3>Макароны с сосисками</h3>
+                <p>
+                    Быстрое и вкусное блюдо на ужин. Макароны отварить, сосиски обжарить с луком, 
+                    смешать, добавить томатную пасту и зелень. Готово за 15 минут!
+                </p>
+            </article>
+
+            <article>
+                <h3>Салат с курицей и ананасом</h3>
+                <p>
+                    Лёгкий и необычный салат: отварная курица, консервированный ананас, яйцо и майонез. 
+                    Получается сочно и сладковато – отличная альтернатива оливье.
+                </p>
+            </article>
+
+            <article>
+                <h3>Жареная картошка с тушёным мясом</h3>
+                <p>
+                    Классика домашней кухни: картофель обжаривается до хрустящей корочки, 
+                    мясо тушится с луком и морковью в собственном соку. Идеально для обеда.
+                </p>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Быстрые блюда на каждый день</li>
+                <li>Мясные и овощные горячие блюда</li>
+                <li>Салаты и закуски</li>
+                <li>Выпечка (пироги, печенье)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Связь</h2>
+            <form>
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Мои рецепты. Обновлено: <span id="update-date"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
